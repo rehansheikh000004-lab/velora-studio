@@ -193,3 +193,89 @@ body.light-mode #themeToggle{
     color:#111;
     border-color:#111;
 }
+
+/* ABOUT */
+
+.about{
+    padding:120px 8%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:56px;
+    margin:20px 0;
+}
+
+.about p{
+    color:#bdbdbd;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.about-box{
+    height:420px;
+    border-radius:30px;
+    background:linear-gradient(135deg,#C8A96A,#2a2a2a);
+    box-shadow:0 25px 60px rgba(200,169,106,.25);
+}
+
+/* SERVICES */
+
+.services{
+    padding:120px 8%;
+    text-align:center;
+    background:#111;
+}
+
+.services h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:54px;
+    margin:20px 0 50px;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.service-card{
+    padding:35px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:25px;
+    background:#181818;
+    transition:.4s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    border-color:#C8A96A;
+}
+
+.service-card h3{
+    color:#C8A96A;
+    margin-bottom:15px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    .about h2,
+    .services h2{
+        font-size:40px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+}
