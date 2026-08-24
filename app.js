@@ -58,3 +58,15 @@ btn.addEventListener("mouseenter", () => {
 btn.addEventListener("mouseleave", () => {
   btn.style.boxShadow = "none";
 });
+
+/* PROJECT CARD HOVER EFFECT */
+
+document.querySelectorAll(".project-card").forEach(card=>{
+    card.addEventListener("mouseenter",()=>{
+        card.style.boxShadow="0 20px 50px rgba(200,169,106,.35)";
+    });
+
+    card.addEventListener("mouseleave",()=>{
+        card.style.boxShadow="none";
+    });
+});
