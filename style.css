@@ -348,3 +348,72 @@ body.light-mode #themeToggle{
         font-size:42px;
     }
 }
+
+/* TESTIMONIALS */
+
+.testimonials{
+    padding:120px 8%;
+    text-align:center;
+    background:#111;
+}
+
+.testimonials h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:52px;
+    margin:20px 0 50px;
+}
+
+.testimonial{
+    display:none;
+    max-width:700px;
+    margin:auto;
+    padding:30px;
+    border-radius:25px;
+    background:#1b1b1b;
+}
+
+.testimonial.active{
+    display:block;
+}
+
+.testimonial p{
+    margin:20px 0;
+    color:#ddd;
+    line-height:1.8;
+}
+
+.testimonial h4{
+    color:#C8A96A;
+}
+
+/* STATS */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    background:#C8A96A;
+}
+
+.stat-box{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.stat-box h3{
+    font-size:42px;
+    color:#111;
+}
+
+.stat-box p{
+    color:#333;
+}
+
+@media(max-width:768px){
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .testimonials h2{
+        font-size:40px;
+    }
+}
