@@ -279,3 +279,72 @@ body.light-mode #themeToggle{
     }
 
 }
+
+/* PROJECTS */
+
+.projects{
+    padding:120px 8%;
+    background:#0b0b0b;
+    text-align:center;
+}
+
+.projects h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:56px;
+    margin:20px 0 50px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.project-card{
+    height:320px;
+    border-radius:28px;
+    overflow:hidden;
+    position:relative;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:scale(1.03);
+}
+
+.project-info{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding:25px;
+    background:linear-gradient(transparent,rgba(0,0,0,.85));
+    color:white;
+}
+
+.project-info span{
+    color:#C8A96A;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+.project-info h3{
+    font-size:28px;
+    margin-top:8px;
+}
+
+/* Luxury backgrounds */
+.p1{background:linear-gradient(135deg,#8b6d45,#1b1b1b);}
+.p2{background:linear-gradient(135deg,#d4b06d,#3a2d1c);}
+.p3{background:linear-gradient(135deg,#b7b0a5,#2d2d2d);}
+.p4{background:linear-gradient(135deg,#4b4b4b,#111);}
+
+@media(max-width:768px){
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+
+    .projects h2{
+        font-size:42px;
+    }
+}
