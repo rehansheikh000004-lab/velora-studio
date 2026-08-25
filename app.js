@@ -81,3 +81,17 @@ setInterval(() => {
   current = (current + 1) % testimonials.length;
   testimonials[current].classList.add("active");
 }, 3000);
+
+/* CONTACT FORM */
+
+const form = document.getElementById("contactForm");
+const message = document.getElementById("successMessage");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  message.textContent =
+    "✨ Consultation request sent successfully! We'll contact you soon.";
+
+  form.reset();
+});
